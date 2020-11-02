@@ -8,10 +8,23 @@
 <tbody>
 <tr>
 <td>
-<button class="projectBtn"><img src="./images/freefonts.ico"></button>
+<img src="./images/freefonts.png" id="freefontBtn">
 </td>
 </tr>
 </tbody>
 </table>
+<script>
+  document.getElementById("freefontBtn").addEventListener("mouseover",function(e){
+    e.setAttribute("src","./images/freefontsLarge.png");
+  });
+  document.getElementById("freefontBtn").addEventListener("mouseleave",function(e){
+    e.setAttribute("src","./images/freefonts.png");
+  });
+  document.getElementById("freefontBtn").addEventListener("mouseclick",function(e){
+    var el = document.createElement("a");
+    el.setAttribute("href","/free-fonts");
+    el.click();
+  });
+</script>
 </body>
 </html>
