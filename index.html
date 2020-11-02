@@ -14,13 +14,13 @@
 </tbody>
 </table>
 <script>
-  document.getElementById("freefontBtn").addEventListener("mouseover",function(e){
-    e.setAttribute("src","./images/freefontsLarge.png");
+  document.getElementById("freefontBtn").addEventListener("mouseover",function(){
+    document.getElementById("freefontBtn").setAttribute("src","./images/freefontsLarge.png");
   });
-  document.getElementById("freefontBtn").addEventListener("mouseleave",function(e){
-    e.setAttribute("src","./images/freefonts.png");
+  document.getElementById("freefontBtn").addEventListener("mouseleave",function(){
+    document.getElementById("freefontBtn").setAttribute("src","./images/freefonts.png");
   });
-  document.getElementById("freefontBtn").addEventListener("mouseclick",function(e){
+  document.getElementById("freefontBtn").addEventListener("mouseclick",function(){
     var el = document.createElement("a");
     el.setAttribute("href","/free-fonts");
     el.click();
