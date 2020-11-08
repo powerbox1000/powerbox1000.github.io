@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>404 Not Found</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ins {
+    color: #777;
+    text-decoration: none;
+}
+p {
+    margin: 11px 0 22px;
+    overflow: hidden;
+}
+html {
+    font: 15px/22px arial,sans-serif;
+}
+</style>
+</head>
+<body>
+  <p><b>404.</b> <ins>(not found)</ins>
+  </p><p>The requested URL<code id="url"></code> was not found on this server.  <ins>That’s all we know.</ins>
+</p>
+<script>
+var path = " " + window.location.pathname;
+document.getElementById("url").innerText = path;
+</body>
+</html>
