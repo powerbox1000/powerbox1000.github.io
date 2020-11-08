@@ -10,6 +10,9 @@
 <td>
 <img src="./images/freefonts.png" id="freefontBtn">
 </td>
+<td>
+<img src="./images/scratchcompile.png" id="scratchcompileBtn" title="Scratch Compiler" alt="Scratch Compiler">
+</td>
 </tr>
 </tbody>
 </table>
@@ -23,6 +26,18 @@
   document.getElementById("freefontBtn").addEventListener("click",function(){
     var el = document.createElement("a");
     el.setAttribute("href","./free-fonts");
+    el.click();
+  });
+  
+  document.getElementById("scratchcompileBtn").addEventListener("mouseover",function(){
+    document.getElementById("scratchcompileBtn").setAttribute("src","./images/scratchcompileLarge.png");
+  });
+  document.getElementById("scratchcompileBtn").addEventListener("mouseleave",function(){
+    document.getElementById("scratchcompileBtn").setAttribute("src","./images/scratchcompile.png");
+  });
+  document.getElementById("scratchCompileBtn").addEventListener("click",function(){
+    var el = document.createElement("a");
+    el.setAttribute("href","./scratch-compile");
     el.click();
   });
 </script>
